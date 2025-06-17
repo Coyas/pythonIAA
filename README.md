@@ -1,5 +1,6 @@
 # pythonIAA
-Python e as Ideias Algoritmicas Avançadas
+
+Python e Ideias Algorítmicas Avançadas
 
 # 🐍 Python Playground & Lab
 
