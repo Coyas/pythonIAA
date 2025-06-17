@@ -1,0 +1,103 @@
+# Ignorar pastas e arquivos comuns em projetos Python
+**/artifacts/
+**/extrato_processado.csv
+**.xls
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest
+.cache/
+*.cover
+*.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.log
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint
+.pylint.d/
+
+# pyenv
+.python-version
+
+# pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# dotenv
+.env
+.env.*
+
+# Spyder
+.spyderproject
+.spyderworkspace
+
+# VS Code Python debug
+.pydevproject
+
+# Other
+*.sqlite3
+*.db
+*.log
+*.bak
+*.swp
+
