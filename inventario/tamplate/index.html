@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de Produtos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0070f3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inventário de Produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>REF</th>
+                <th>Nome</th>
+                <th>Publicado</th>
+                <th>Em Destaque?</th>
+                <th>Visibilidade</th>
+                <th>Preço Normal</th>
+                <th>Preço Promocional</th>
+                <th>Qtd Estoque</th>
+                <th>Categorias</th>
+                <th>Etiquetas</th>
+                <th>Imagens</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produto in produtos %}
+            <tr>
+                <td>{{ produto.id }}</td>
+                <td>{{ produto.tipo }}</td>
+                <td>{{ produto.sku }}</td>
+                <td>{{ produto.nome }}</td>
+                <td>{{ produto.publicado }}</td>
+                <td>{{ produto.emDestaque }}</td>
+                <td>{{ produto.visibilidade }}</td>
+                <td>{{ produto.precoNormal }}</td>
+                <td>{{ produto.precoPromocional }}</td>
+                <td>{{ produto.qtdEstoque }}</td>
+                <td>{{ produto.categorias }}</td>
+                <td>{{ produto.tags }}</td>
+                <td>{{ produto.imagens }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/exportar_csv">
+        <button>Exportar para CSV</button>
+    </a>
+
+</body>
+</html>

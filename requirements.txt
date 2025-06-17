@@ -1,0 +1,15 @@
+pyspark
+pandas
+openpyxl
+matplotlib
+seaborn
+xlrd
+numpy
+flask
+tkinter
+tkcalendar
+sqlite3
+ttkbootstrap
+speech_recognition
+networkx
+dnspython
